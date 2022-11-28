@@ -4,7 +4,6 @@ import { AppProps } from "next/app";
 
 function check_if_in_Development() {
     const env = process.env.NODE_ENV
-    console.log(env)
     if (env == "development") {
         return true
     }
