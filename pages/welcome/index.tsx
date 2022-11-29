@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Button from "../../Components/button with icon/button";
-import styles from "../../styles/Welcome.module.css"
+import Button from "../../components/button with icon/button";
 
 export default function Welcome() {
 
@@ -11,8 +10,8 @@ export default function Welcome() {
             </Head>
 
             <main>
-                <div className={styles.container}>
-                    <h1>Welcome to my website</h1>
+                <div className="container">
+                    <h1 className="text-5xl">Bakri Hmouda</h1>
                     <Button text="visit portfolio" icon="" link="/" />
                     <Button text="download cv" icon="" link="/cv" />
                 </div>

@@ -1,5 +1,6 @@
-import "../styles/normalize.css"
+import "../styles/globals.css";
 import { AppProps } from "next/app";
+import Layout from "../components/layout";
 
 
 function check_if_in_Development() {
@@ -13,7 +14,14 @@ function check_if_in_Development() {
 }
 
 export default function App({ Component, pageProps }: AppProps) {
+
     //   display build message in production
     if (!check_if_in_Development()) { return <h1>website is being built!</h1> }
-    return <Component {...pageProps} />
+
+    // return rest of pages in development
+    return (
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    )
 }

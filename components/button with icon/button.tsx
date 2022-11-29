@@ -1,5 +1,4 @@
 import Link from "next/link"
-import styles from "./button.module.css"
 
 
 export default function Button({ text, icon, link }:
@@ -8,7 +7,7 @@ export default function Button({ text, icon, link }:
     return (
         <Link href={link}>
             <button>
-                {text}
+                <i className="fa-solid fa-house"></i>{text}
             </button>
         </Link>
     )
