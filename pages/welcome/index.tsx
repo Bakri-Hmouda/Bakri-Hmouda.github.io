@@ -19,7 +19,7 @@ export default function Welcome() {
 
                     <div className="flex max-sm:flex-col min-w-full min-h-fit mt-5 gap-4 justify-between ">
                         <Link className="bg-primary/75 hover:bg-primary/50
-                         flex-1 transition-colors p-3 rounded text-center" href="#">
+                         flex-1 transition-colors p-3 rounded text-center" href="/">
                             HOME
                         </Link>
 

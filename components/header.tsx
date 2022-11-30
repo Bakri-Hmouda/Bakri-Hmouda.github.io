@@ -1,0 +1,37 @@
+import Link from "next/link"
+import React, { useState } from "react"
+
+export default function Header(): React.ReactElement {
+    const [open, setOpen] = useState(false)
+
+    return (
+        <>
+            <header className="max-w-full border-b-2 mt-20 sticky border-yellow-400">
+                <div className="container relative flex content-around items-center px-5">
+
+                    {/* site header */}
+                    <div className="flex-1 ">
+                        <h1 className="text-3xl">Bakri Hmouda</h1>
+                        <p className="text-xs">
+                            full-stack web developer
+                        </p>
+                    </div>
+
+                    {/* show menu button on mobile device */}
+                    <div className="sm:hidden" onClick={(): void => setOpen(!open)}>
+                        <i className="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                    {/* nav menus - transom to mobile menu on sm break point */}
+                    <div className="flex max-sm:absolute gap-3 
+                    max-sm:bg-lightGrey max-sm:flex-col max-sm:top-[104%] max-sm:w-full max-sm:right-0 max-sm:p-5 max-sm:shadow-md">
+                        <Link href="#" className="hover:text-yellow-400 transition-colors">BIO</Link>
+                        <Link href="#" className="hover:text-yellow-400 transition-colors">EXPERIENCE</Link>
+                        <Link href="#" className="hover:text-yellow-400 transition-colors">PORTFOLIO</Link>
+                        <Link href="#" className="hover:text-yellow-400 transition-colors">CONTACT</Link>
+                    </div>
+                </div>
+            </header>
+        </>
+    )
+}
