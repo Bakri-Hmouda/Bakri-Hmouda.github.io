@@ -18,6 +18,11 @@ module.exports = {
         lightGrey: '#3E505B',
         primary: '#8AB0AB'
       },
+      transitionProperty: {
+        'height': 'height',
+        'width': 'width',
+        'spacing': 'margin, padding',
+      },
     },
   },
   plugins: [],

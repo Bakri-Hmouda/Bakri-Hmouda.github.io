@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import { AppProps } from "next/app";
-import Layout from "../components/layout";
 
 
 function check_if_in_Development() {
@@ -20,8 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
     // return rest of pages in development
     return (
-        <Layout>
-            <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
     )
 }
