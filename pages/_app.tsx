@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { AppProps } from "next/app";
+import Layout from "../components/layout";
 
 
 function check_if_in_Development() {

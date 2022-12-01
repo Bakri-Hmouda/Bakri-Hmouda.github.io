@@ -1,15 +1,16 @@
+import Bio from "../components/home/bio";
+import Experience from "../components/home/experience";
 import Layout from "../components/layout";
 
 export default function Home() {
     return (
         <Layout>
-            <header>
-                <h1>Bio</h1>
-            </header>
-            <section>
-                <h1>
-                    Experience
-                </h1>
+            <section className="my-5">
+                <Bio />
+            </section>
+
+            <section className="bg-wave">
+                <Experience />
             </section>
             <section>
                 <h1>

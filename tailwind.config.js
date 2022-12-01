@@ -18,11 +18,9 @@ module.exports = {
         lightGrey: '#3E505B',
         primary: '#8AB0AB'
       },
-      transitionProperty: {
-        'height': 'height',
-        'width': 'width',
-        'spacing': 'margin, padding',
-      },
+      backgroundImage: {
+        wave: "url('/static/background-images/wave1.svg')"
+      }
     },
   },
   plugins: [],
