@@ -9,7 +9,7 @@ export default function Home() {
                 <Bio />
             </section>
 
-            <section className="bg-wave">
+            <section className="bg-wave bg-cover">
                 <Experience />
             </section>
             <section>
