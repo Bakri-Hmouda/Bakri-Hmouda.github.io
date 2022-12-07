@@ -16,7 +16,8 @@ module.exports = {
         darkGrey: '#1A1D1A',
         darkGreen: '26413C',
         lightGrey: '#3E505B',
-        primary: '#8AB0AB'
+        primary: '#8AB0AB',
+        accent: '#8AB0AB'
       },
       backgroundImage: {
         wave: "url('/static/background-images/wave1.svg')"

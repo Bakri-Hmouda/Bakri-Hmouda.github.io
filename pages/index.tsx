@@ -1,21 +1,25 @@
 import Bio from "../components/home/bio";
+import Education from "../components/home/education";
 import Experience from "../components/home/experience";
+import Projects from "../components/home/projects";
 import Layout from "../components/layout";
 
 export default function Home() {
     return (
         <Layout>
-            <section className="my-5">
+            <section className="py-4">
                 <Bio />
             </section>
 
-            <section className="bg-wave bg-cover">
+            <section className="py-4">
                 <Experience />
             </section>
-            <section>
-                <h1>
-                    Projects
-                </h1>
+            <section className="py-4">
+                <Projects />
+            </section>
+
+            <section className="py-4">
+                <Education />
             </section>
             <section>
                 Contact
