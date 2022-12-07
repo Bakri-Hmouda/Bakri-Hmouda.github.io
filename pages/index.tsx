@@ -21,9 +21,7 @@ export default function Home() {
             <section className="py-4">
                 <Education />
             </section>
-            <section>
-                Contact
-            </section>
+
         </Layout>
     )
 }

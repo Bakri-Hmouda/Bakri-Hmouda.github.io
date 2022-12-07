@@ -16,7 +16,7 @@ function check_if_in_Development() {
 export default function App({ Component, pageProps }: AppProps) {
 
     //   display build message in production
-    if (!check_if_in_Development()) { return <h1>website is being built!</h1> }
+    // if (!check_if_in_Development()) { return <h1>website is being built!</h1> }
 
     // return rest of pages in development
     return (

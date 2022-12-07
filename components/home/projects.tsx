@@ -57,7 +57,7 @@ function Projects() {
                                 <li>kheirwbarakeh - e-commerce for a local business</li>
                             </ul>
 
-                            <p className='text-sm pt-5 '>*all projects are full-stack projects using <strong>React</strong> for the frontend, and <strong>node</strong> with <strong>express</strong> or <strong>laravel</strong> for the backend.</p>
+                            <p className='text-sm text-accent pt-5 '>*all projects are full-stack projects using <strong>React</strong> for the frontend, and <strong>node</strong> with <strong>express</strong> or <strong>laravel</strong> for the backend.</p>
                         </div>
                     </div>
                 </div>
