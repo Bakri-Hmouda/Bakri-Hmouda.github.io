@@ -23,10 +23,10 @@ export default function Welcome() {
                             HOME
                         </Link>
 
-                        <Link className="border-2  flex-1 border-primary/75 hover:bg-primary/20
-                         transition-colors p-3 rounded text-center" href="#">
-                            DOWNLOAD CV
-                        </Link>
+                        <a className="border-2  flex-1 border-primary/75 hover:bg-primary/20
+                         transition-colors p-3 rounded text-center" href="/static/downloads/bakri-hmouda-cv.pdf" target='_blank'>
+                            <i className="fa-solid fa-file-arrow-down mx-1 text-sm"></i>  DOWNLOAD CV
+                        </a>
                     </div>
 
                 </div>

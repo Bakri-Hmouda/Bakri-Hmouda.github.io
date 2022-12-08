@@ -1,8 +1,10 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
 import React, { useState } from "react"
 
 export default function Header(): React.ReactElement {
     const [open, setOpen] = useState(false)
+    const currentPath = useRouter().pathname
 
     return (
 
@@ -26,10 +28,9 @@ export default function Header(): React.ReactElement {
                 <div className={`flex max-sm:absolute gap-3 ${!open && 'max-sm:hidden'}
                         max-sm:bg-lightGrey max-sm:flex-col max-sm:top-[104%] max-sm:w-full max-sm:right-0 
                         max-sm:p-5 max-sm:shadow-md`}>
-                    <Link href="#" className="hover:text-yellow-400 transition-colors">BIO</Link>
-                    <Link href="#" className="hover:text-yellow-400 transition-colors">EXPERIENCE</Link>
-                    <Link href="#" className="hover:text-yellow-400 transition-colors">PORTFOLIO</Link>
-                    <Link href="#" className="hover:text-yellow-400 transition-colors">CONTACT</Link>
+                    <Link href="/" className={`hover:text-yellow-400 transition-colors ${currentPath === '/' && 'text-yellow-400'}`}>HOME</Link>
+                    <Link href="/design" className={`hover:text-yellow-400 transition-colors ${currentPath === '/design' && 'text-yellow-400'}`}>DESIGN</Link>
+                    <Link href="/contact" className={`hover:text-yellow-400 transition-colors ${currentPath === '/contact' && 'text-yellow-400'}`}>CONTACT</Link>
                 </div>
             </div>
         </header>
