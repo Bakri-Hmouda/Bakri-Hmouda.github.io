@@ -1,10 +1,8 @@
 import React from 'react'
 
-interface props { pdf_url: string }
 
-function Footer(props: props) {
 
-    const { pdf_url } = props
+function Footer() {
 
     return (
         <>
